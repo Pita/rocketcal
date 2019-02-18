@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parser parses correctly static html 1`] = `
+Array [
+  Object {
+    "attributes": Object {
+      "LSP": "SpaceX",
+      "Location": "Cape Canaveral, FL, USA",
+      "Mission": "GTO-1 (Beresheet, S5),Nusantara Satu (PSN VI)",
+      "Rocket": "Falcon 9 Block 5",
+      "Window end": "2019-02-22 01:45:00 UTC",
+      "Window start": "2019-02-22 01:45:00 UTC",
+    },
+    "date": 2019-02-22T01:45:00.000Z,
+    "label": "Falcon 9 Block 5 | Nusantara Satu & GTO-1 (Beresheet, S5)",
+  },
+  Object {
+    "attributes": Object {
+      "LSP": "Arianespace",
+      "Location": "Kourou, French Guiana",
+      "Mission": "6 x OneWeb (1-6)",
+      "Rocket": "Soyuz STB/Fregat",
+      "Window end": "2019-02-26 21:37:00 UTC",
+      "Window start": "2019-02-26 21:37:00 UTC",
+    },
+    "date": 2019-02-26T21:37:00.000Z,
+    "label": "Soyuz STB/Fregat | 6 x OneWeb (1-6)",
+  },
+]
+`;

@@ -1,0 +1,41 @@
+service:
+  name: rocketcal
+
+# Add the serverless-webpack plugin
+plugins:
+  - serverless-webpack
+
+custom:
+  bucket: rocketcal
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-central-1
+  stage: prod
+  memorySize: 256
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+        - s3:PutObjectAcl
+      Resource: "arn:aws:s3:::${self:custom.bucket}/*"
+
+functions:
+  fetch:
+    handler: src/handler.fetch
+    events:
+      # - http:
+      #     method: get
+      #     path: fetch
+      # - s3: ${self:custom.bucket}
+      - schedule: rate(6 hours)
+    environment:
+      BUCKET: ${self:custom.bucket}
+    timeout: 20
+# resources:
+#   Resources:
+#     S3Bucket:
+#       Type: AWS::S3::Bucket
+#       Properties:
+#         BucketName: ${self:custom.bucket}

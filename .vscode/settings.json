@@ -1,0 +1,6 @@
+{
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "prettier.trailingComma": "es5"
+}
