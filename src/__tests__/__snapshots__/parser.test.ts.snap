@@ -4,27 +4,55 @@ exports[`parser parses correctly static html 1`] = `
 Array [
   Object {
     "attributes": Object {
+      "LSP": "Khrunichev State Research and Production Space Center",
+      "Location": "Baikonur Cosmodrome, Republic of Kazakhstan",
+      "Mission": "EgyptSat-A",
+      "Rocket": "Soyuz 2.1b/Fregat-M",
+      "Window end": "2019-02-21 16:47:00 UTC",
+      "Window start": "2019-02-21 16:47:00 UTC",
+    },
+    "date": 2019-02-21T16:47:00.000Z,
+    "href": undefined,
+    "label": "Soyuz 2.1b/Fregat-M | EgyptSat-A",
+  },
+  Object {
+    "attributes": Object {
       "LSP": "SpaceX",
       "Location": "Cape Canaveral, FL, USA",
       "Mission": "GTO-1 (Beresheet, S5),Nusantara Satu (PSN VI)",
       "Rocket": "Falcon 9 Block 5",
-      "Window end": "2019-02-22 01:45:00 UTC",
+      "Window end": "2019-02-22 02:17:00 UTC",
       "Window start": "2019-02-22 01:45:00 UTC",
     },
     "date": 2019-02-22T01:45:00.000Z,
+    "href": "https://everydayastronaut.com/prelaunch-preview-spacex-nusantara-satu-psn-vi/",
     "label": "Falcon 9 Block 5 | Nusantara Satu & GTO-1 (Beresheet, S5)",
   },
   Object {
     "attributes": Object {
       "LSP": "Arianespace",
       "Location": "Kourou, French Guiana",
-      "Mission": "6 x OneWeb (1-6)",
+      "Mission": "OneWeb F6",
       "Rocket": "Soyuz STB/Fregat",
       "Window end": "2019-02-26 21:37:00 UTC",
       "Window start": "2019-02-26 21:37:00 UTC",
     },
     "date": 2019-02-26T21:37:00.000Z,
-    "label": "Soyuz STB/Fregat | 6 x OneWeb (1-6)",
+    "href": undefined,
+    "label": "Soyuz STB/Fregat | OneWeb F6",
+  },
+  Object {
+    "attributes": Object {
+      "LSP": "SpaceX",
+      "Location": "Kennedy Space Center, FL, USA",
+      "Mission": "SpaceX DM-1",
+      "Rocket": "Falcon 9 Block 5",
+      "Window end": "2019-03-02 07:48:00 UTC",
+      "Window start": "2019-03-02 07:48:00 UTC",
+    },
+    "date": 2019-03-02T07:48:00.000Z,
+    "href": undefined,
+    "label": "Falcon 9 Block 5 | SpX-DM1 (Demonstration Mission 1)",
   },
 ]
 `;

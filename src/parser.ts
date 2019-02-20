@@ -18,6 +18,7 @@ export interface Launch {
   label: string;
   attributes: Static<typeof launchAttributes>;
   date: Date;
+  href?: string;
 }
 
 export function parseLaunches(body: string): Launch[] {
@@ -63,11 +64,21 @@ export function parseLaunches(body: string): Launch[] {
     });
     const attributes = launchAttributes.check(attributesObject);
 
-    const label = $row
-      .find(".prelaunch_previews_tooltip")
-      .contents()
-      .first()
-      .text();
+    const link = $row.find(".prelaunch_previews_tooltip > a");
+    let label: string;
+    let href: string;
+    if (link.length === 1) {
+      label = link.text();
+      href = link.attr("href");
+    } else {
+      label = $row
+        .find(".prelaunch_previews_tooltip")
+        .contents()
+        .first()
+        .text()
+        .trim();
+    }
+
     const date = new Date(attributes["Window start"]);
     if (!isValidDate(date)) {
       throw new Error(`Invalid date '${attributes["Window start"]}'`);
@@ -77,6 +88,7 @@ export function parseLaunches(body: string): Launch[] {
       label,
       date,
       attributes,
+      href,
     });
   });
 

@@ -10,6 +10,9 @@ export function generateIcal(launches: Launch[]): string {
     for (const attributeName of Object.keys(launch.attributes)) {
       description += `${attributeName}: ${launch.attributes[attributeName]}\n`;
     }
+    if (launch.href) {
+      description += `Link: ${launch.href}`;
+    }
 
     cal.createEvent({
       timezone: "UTC",
