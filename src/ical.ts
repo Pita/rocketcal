@@ -21,6 +21,7 @@ export function generateIcal(launches: Launch[]): string {
       summary: launch.label,
       description,
       location: launch.attributes.Location,
+      url: launch.href ? launch.href : undefined,
       alarms: [
         {
           type: "display",
