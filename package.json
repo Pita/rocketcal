@@ -9,6 +9,7 @@
   "dependencies": {
     "aws-sdk": "^2.401.0",
     "cheerio": "^1.0.0-rc.2",
+    "chrono-node": "^1.4.6",
     "ical-generator": "^1.4.5",
     "moment": "^2.24.0",
     "request": "^2.88.0",
