@@ -1,5 +1,7 @@
 service:
   name: rocketcal
+package:
+  individually: true
 
 # Add the serverless-webpack plugin
 plugins:
@@ -7,6 +9,10 @@ plugins:
 
 custom:
   bucket: rocketcal
+  webpack:
+    webpackConfig: "webpack.config.js"
+    packager: "yarn"
+    includeModules: true
 
 provider:
   name: aws

@@ -4,18 +4,26 @@
   "description": "Provides every day's astronaut as ical",
   "main": "handler.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "deploy": "sls deploy",
+    "invoke": "sls invoke --function fetch"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
     "aws-sdk": "^2.401.0",
+    "babel-loader": "^8.1.0",
+    "cache-loader": "^4.1.0",
     "cheerio": "^1.0.0-rc.2",
     "chrono-node": "^1.4.6",
+    "fork-ts-checker-webpack-plugin": "^4.1.4",
     "ical-generator": "^1.4.5",
     "moment": "^2.24.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
     "runtypes": "^4.2.0",
-    "serverless": "^1.38.0"
+    "serverless": "^1.38.0",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
