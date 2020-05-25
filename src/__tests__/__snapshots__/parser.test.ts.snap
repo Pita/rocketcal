@@ -4,23 +4,29 @@ exports[`parser parses correctly static html 1`] = `
 Array [
   Object {
     "date": 2020-05-24T17:00:00.000Z,
+    "dateStr": "May 24 2020 17:00 – 21:00 UTC (10 am – 2 pm PST)",
     "href": "https://everydayastronaut.com/launcherone-test-flight/",
-    "label": "LauncherOne | Test Flight",
+    "label": "LauncherOne | Test Flight (May 24 2020 17:00 – 21:00 UTC (10 am – 2 pm PST))",
   },
   Object {
     "date": 2020-05-27T20:33:31.000Z,
+    "dateStr": "May 27 2020 20:33:31 UTC (4:33:31 pm EDT)",
     "href": "https://everydayastronaut.com/dragon-2-dm-2-spacexs-first-crewed-mission/",
-    "label": "Falcon 9 Block 5 | Crew Dragon DM-2",
+    "label": "Falcon 9 Block 5 | Crew Dragon DM-2 (May 27 2020 20:33:31 UTC (4:33:31 pm EDT))",
   },
   Object {
     "date": 2020-05-28T10:00:00.000Z,
+    "dateStr": "NET May 28 2020 – TBD",
     "href": "https://everydayastronaut.com/starship-sn-4-150-meter-hop/",
-    "label": "Starship SN-4 | 150 meter hop",
+    "label": "Starship SN-4 | 150 meter hop (NET May 28 2020 – TBD)",
   },
   Object {
     "date": 2020-05-19T10:00:00.000Z,
+    "dateStr": "Postponed from May 19, 2020 – TBD
+",
     "href": "https://everydayastronaut.com/starlink-7-falcon-9-block-5-prelaunch-preview/",
-    "label": "Falcon 9 | Starlink 7",
+    "label": "Falcon 9 | Starlink 7 (Postponed from May 19, 2020 – TBD
+)",
   },
 ]
 `;

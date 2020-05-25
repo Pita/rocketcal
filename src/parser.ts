@@ -4,6 +4,7 @@ const chrono = require("chrono-node");
 export interface Launch {
   label: string;
   date: Date;
+  dateStr: string;
   href?: string;
 }
 
@@ -22,16 +23,17 @@ export function parseLaunches(body: string): Launch[] {
     try {
       const $row = $(row);
 
-      const rowText = $row.children("td").last().text();
-      const date = chrono.parseDate(rowText);
+      const dateStr = $row.children("td").last().text();
+      const date = chrono.parseDate(dateStr);
 
       const link = $row.find("td > a");
-      const label = link.text();
+      const label = `${link.text()} (${dateStr})`;
       const href = link.attr("href");
 
       launches.push({
         label,
         date,
+        dateStr,
         href,
       });
     } catch (e) {

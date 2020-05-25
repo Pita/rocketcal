@@ -8,8 +8,9 @@ export function generateIcal(launches: Launch[]): string {
   launches.forEach((launch) => {
     let description = "";
     if (launch.href) {
-      description += `Link: ${launch.href}`;
+      description += `Link: ${launch.href}\n`;
     }
+    description += `Time: ${launch.dateStr}`;
 
     cal.createEvent({
       timezone: "UTC",
