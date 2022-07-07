@@ -18,7 +18,7 @@
     "chrono-node": "^1.4.6",
     "fork-ts-checker-webpack-plugin": "^4.1.4",
     "ical-generator": "^1.4.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
     "runtypes": "^4.2.0",
